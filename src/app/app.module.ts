@@ -9,6 +9,10 @@ import { HomePage } from '../pages/home/home';
 import { NewGoalPage } from '../pages/new-goal/new-goal';
 import { GoalDetailPage } from '../pages/goal-detail/goal-detail';
 
+
+import {ProgressBarModule} from "angular-progress-bar";
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -18,7 +22,8 @@ import { GoalDetailPage } from '../pages/goal-detail/goal-detail';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ProgressBarModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

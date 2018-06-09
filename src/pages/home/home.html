@@ -3,15 +3,47 @@
     <ion-title>
       Ionic Blank
     </ion-title>
+    <button (click)="onNewGoal()" ion-button>newGoal +</button>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-  <button (click)="onGoalDetails()" ion-button>view goal </button>
-  <button (click)="onNewGoal()" ion-button>newGoal +</button>
-
+  <h1>Goals</h1>
+  <ion-list>
+    <ion-row>
+      <ion-card (click)="onGoalDetails()" id="card">
+        <div class="cardcont">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRX33guRrziFAgzr0SaXYAeukJD2TCyqpBpYzVlvp2fuJ-oQ__" />
+        </div>
+        <div class="card-title">Run a Marathon</div>
+        <ion-item> <span item-left>Step 5/12</span>
+          <progress-bar [progress]="75" [color]="blue">
+          </progress-bar>
+        </ion-item>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card id="card">
+        <div class="cardcont">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRX33guRrziFAgzr0SaXYAeukJD2TCyqpBpYzVlvp2fuJ-oQ__" />
+        </div>
+        <div class="card-title">Run a Marathon</div>
+        <ion-item> <span item-left>Step 5/12</span>
+          <progress-bar [progress]="75" [color]="blue">
+          </progress-bar>
+        </ion-item>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card id="card">
+        <div class="cardcont">
+          <img src="https://i.pinimg.com/originals/3e/8f/bf/3e8fbfcf97634d690b23ef50841c3d11.jpg" />
+        </div>
+        <div class="card-title">Get Organized</div>
+        <ion-item> <span item-left>Step 7/7</span>
+          <progress-bar [progress]="100" [color]="danger">
+          </progress-bar>
+        </ion-item>
+      </ion-card>
+    </ion-row>
+  </ion-list>
 </ion-content>
