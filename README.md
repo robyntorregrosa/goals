@@ -2,19 +2,19 @@ Personal Goal Tracking App
 
 To Run:
 
-#if you dont have node
+#if you dont have node#
 brew install node
 
-#get ionic
+#get ionic#
 npm install -g ionic
 
-#get project
+#get project#
 git clone <gitlink>
 
-#go into project
+#go into project#
 cd goals
 
-#to run in browser
+#to run in browser#
 ionic serve
 
 
