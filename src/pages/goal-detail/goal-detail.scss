@@ -15,8 +15,7 @@ page-goal-detail {
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bea2e7', endColorstr='#86b7e7',GradientType=0 );
         /* IE6-9 */
         }
-        
-    .container ul {
+        .container ul {
         margin: 0;
         margin-top: 30px;
         list-style: none;
@@ -84,7 +83,7 @@ page-goal-detail {
     .container span.number span {
         position: absolute;
         font-size: 10px;
-        left: -35px;
+        left: -45px;
         font-weight: bold;
     }
     .container span.number span:first-child {
@@ -93,5 +92,6 @@ page-goal-detail {
     .container span.number span:last-child {
         top: 100%;
     }
+
 }
 

@@ -1,0 +1,78 @@
+<html>
+	<head>
+			<title>Non-Specific Goal</title>
+			<script src="quiz.js"></script>
+	</head>
+
+	<body>
+
+	<form>
+	
+	<div id="stateGoal">
+	<p>What do you want to happen?</p>
+	<input type="richtext"></input>
+	</div>
+
+	<div id="motive" style="display:none">
+	<p>Why is this important to you?</p>
+	<input type="richtext"></input>
+	</div>
+
+	<div id="whatToday" style="display:none">
+	<p>What can you do today to make progress?  Input a simple step you can take to make a small positive change</p>
+	<button type="button" onclick = "javascript:getSuggestions()">Get Suggestions</button>
+	<input type="richtext" id="today"></input>
+	</div>
+
+	<div id="allOrNothing" style="display:none">
+	<p>Is this step an all or nothing thing or is it possible to partially succeed?</p>
+	<input type=radio name = "allOrNothing" value="all">All or nothing</input>
+	<input type=radio name = "allOrNothing" value="part">Partial works</input>	
+	</div>
+
+	<div id="howItWentBinary" style="display:none">
+	<p>Let's check in. Have you completed your last step?</p>
+	<input type=radio name = "binarySuccess" value="Y">Yes</input>
+	<input type=radio name = "binarySuccess" value="N">No</input>
+	</div>
+
+	<div id="howItWentScale" style="display:none">
+	<p>Let's check in. How well did your last step go?</p> 
+	<input type=radio name="success" value="1">1: I haven't started yet.</input>
+	<br>
+
+	<input type=radio name="success" value="2">2: I started and making pretty good progress.</input>
+	<br>
+
+	<input type=radio name="success" value="3">3: I'm done!</input>
+	</div>
+
+	<div id="congratulations" style="display:none">
+	<p>Congratulations!  You are making progress! Keep it up</p>
+	</div>
+
+	<div id="whyNot" style="display:none">
+	<p>Why?</p>
+	<input type="richtext"></input>
+	</div>
+
+	<div id="repeatable" style="display:none">
+	<p>Is it still possible to continue working on this step (or to try it again)?</p>
+	<input type=radio name = "canContinue" value="Y">Yes</input>
+	<input type=radio name = "canContinue" value="N">No</input>
+	</div>
+
+	<div id="encourage" style="display:none">
+	<p>That sucks, but I'm sure we can find a new way to help you make progress.  I believe in you!</p>
+	</div>
+
+	<div id="modify" style="display:none">
+	<p>If you are not seeing the results you want to see, is there anything you want to change about your approach?</p>
+	<input type="richtext"></input>
+	</div>
+	
+	<button type="button" onclick="javascript:update()">Continue</button>
+	</form>
+	</body>
+
+</html>
