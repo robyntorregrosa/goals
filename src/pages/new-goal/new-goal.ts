@@ -14,9 +14,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NewGoalPage {
 
+
+	public myItemsList = [1,2,3];
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  addMilestone() {
+  	this.myItemsList.push(this.myItemsList[this.myItemsList.length - 1] + 1);
+  }
 
   
 

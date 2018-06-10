@@ -1,19 +1,57 @@
-
-<ion-slides pager>
-
- <ion-slide style="background-color: green">
-   <h2>Slide 1</h2>
- </ion-slide>
-
- <ion-slide style="background-color: blue">
-   <h2>Slide 2</h2>
- </ion-slide>
-
- <ion-slide style="background-color: red">
-   <h2>Slide 3</h2>
- </ion-slide>
-
-</ion-slides>
-
-
-
+<ion-header>
+  <ion-navbar>
+    <ion-title>Add New Goal</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-slides pager>
+    <ion-slide>
+      <h2>I'm working on...</h2>
+      <ion-item>
+        <ion-label>Productivity</ion-label>
+        <ion-checkbox checked="false"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Health</ion-label>
+        <ion-checkbox checked="false"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Relationships</ion-label>
+        <ion-checkbox checked="false"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Finance</ion-label>
+        <ion-checkbox checked="false"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Personal Development</ion-label>
+        <ion-checkbox checked="false"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Career</ion-label>
+        <ion-checkbox checked="false"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Other</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-slide>
+    <ion-slide style="background-color: light">
+      <div class="upper">
+        <h4>what is your goal?</h4>
+        <ion-input id="goalInput" placeholder="type here" type="input"></ion-input>
+        <a href=" "><h4>or do you not have one?</h4> </a>
+      </div>
+      <div class="middle">
+        <h4>break your goal into at least 3 smaller milestones</h4>
+        <ion-item *ngFor="let myItem of myItemsList; let i = index">
+          <ion-input [(ngModel)]="myItemsList[i]" type="text"></ion-input>
+        </ion-item>
+        <button (click)="addMilestone()" ion-button>Add</button>
+      </div>
+    </ion-slide>
+    <ion-slide style="background-color: light">
+      <h2>Slide 3</h2>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
