@@ -32,7 +32,9 @@ export class NewGoalPage {
 
   }
 
-
+  finish() {
+  	this.navCtrl.pop();
+  }
   addImage() {
   	console.log("che");
   	this.displayImage = true;

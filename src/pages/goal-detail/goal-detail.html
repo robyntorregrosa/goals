@@ -48,7 +48,7 @@
       <button ion-fab>
         <ion-icon name="ios-image"></ion-icon>
       </button>
-      <button ion-fab>
+      <button ion-fab (click)="onChange()">
         <ion-icon name="create"></ion-icon>
       </button>
       <button ion-fab>
@@ -61,7 +61,7 @@
       <li>
         <div><span></span>
           <label for="check" style="word-wrap:break-word">
-            <ion-checkbox color="dark" checked="true"></ion-checkbox>
+            <ion-checkbox [checked]="checked" [(ngModel)]="checked" (ionChange)="onCheck()" color="dark" checked="true"></ion-checkbox>
             <span class="title">Buy new gear</span>
           </label>
           <img src="https://static.vecteezy.com/system/resources/previews/000/145/796/non_2x/running-equipment-free-vector.jpg">
@@ -78,7 +78,7 @@
       <li><span></span>
         <div><span></span>
           <label for="check" style="word-wrap:break-word">
-            <ion-checkbox color="dark" checked="true"></ion-checkbox>
+            <ion-checkbox (ionChange)="onCheck()" color="dark" checked="true"></ion-checkbox>
             <span class="title">Interval Running- 6 mi</span>
           </label>
           <img src="http://files.www.fleetfeetcincy.com/resources/running-routes/5MileCarp.png" />
@@ -101,7 +101,7 @@
       <li>
         <div><span></span>
           <label for="check" style="word-wrap:break-word">
-            <ion-checkbox color="dark" checked="true"></ion-checkbox>
+            <ion-checkbox (ionChange)="onCheck()" color="dark" checked="true"></ion-checkbox>
             <span class="title">Volunteer at children's 5k!</span>
             <img src="http://girlsrun.org/wp-content/uploads/2013/11/slider3.jpg" />
           </label>
@@ -114,7 +114,7 @@
       <li>
         <div><span></span>
           <label for="check" style="word-wrap:break-word">
-            <ion-checkbox color="dark" checked="true"></ion-checkbox>
+            <ion-checkbox (ionChange)="onCheck()"color="dark" checked="true"></ion-checkbox>
             <span class="title"><ion-icon name="ios-contact"></ion-icon> Run w/ Jen @4pm</span>
             <img src="https://cdn-assets.alltrails.com/uploads/photo/image/11321859/extra_large_cd3db20269ceb0c5bbcceea04ce32a46.jpg" />
           </label>
@@ -127,7 +127,7 @@
       <li>
         <div><span></span>
           <label for="check" style="word-wrap:break-word">
-            <ion-checkbox color="dark" checked="false"></ion-checkbox>
+            <ion-checkbox (ionChange)="onCheck()" icolor="dark" checked="false"></ion-checkbox>
             <span class="title">Marathon completed!</span>
             <img src="https://www.nyrr.org/sites/default/files/DASH16_DASH_006.jpg" />
           </label>
