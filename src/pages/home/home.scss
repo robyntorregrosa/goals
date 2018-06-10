@@ -15,6 +15,18 @@ page-home {
     font-size: 13px;
   }
 
+  #logo {
+    border-radius: 25%;
+    width: 50px;
+    height: 50px;
+    display: inline;
+  }
+  #logohead {
+  display:inline;
+  font-size: 40px;
+  font-weight: bold;
+  }
+
   ion-content {
     @include linear-gradient(left,
     $clouds);
