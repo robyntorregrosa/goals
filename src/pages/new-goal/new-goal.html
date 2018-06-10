@@ -47,11 +47,19 @@
       <ion-list>
         <ion-card *ngFor="let item of myItemsList; let i = index">
           <ion-card-content>
-            <ion-item>
-              <ion-label id="label" >milestone title: </ion-label>
-              <ion-label>date: </ion-label>
-                <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
-            </ion-item>
+
+          <ion-list>
+
+          <ion-item>
+            <ion-input type="text" placeholder="Milestone Title"></ion-input>
+          </ion-item>
+
+          <ion-item>
+          <ion-datetime placeholder="Goal Date" displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+          </ion-item>
+
+        </ion-list>
+          
           </ion-card-content>
         </ion-card>
       </ion-list>
@@ -78,7 +86,7 @@
           <ion-avatar item-start>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Mark_Zuckerberg_em_setembro_de_2014_%28cropped%29.jpg/220px-Mark_Zuckerberg_em_setembro_de_2014_%28cropped%29.jpg">
           </ion-avatar>
-          <ion-checkbox color="dark" checked="true"></ion-checkbox>
+          <ion-checkbox color="blue" checked="true"></ion-checkbox>
         </ion-item>
         <ion-item>
           <ion-label>Spiderman</ion-label>
@@ -92,10 +100,10 @@
           <ion-avatar item-start>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Mark_Zuckerberg_em_setembro_de_2014_%28cropped%29.jpg/220px-Mark_Zuckerberg_em_setembro_de_2014_%28cropped%29.jpg">
           </ion-avatar>
-          <ion-checkbox color="secondary" checked="true"></ion-checkbox>
+          <ion-checkbox color="blue" checked="true"></ion-checkbox>
         </ion-item>
         <ion-item>
-          <button ion-button>More Friends</button>
+          <button ion-button>Invite Friends</button>
         </ion-item>
       </ion-list>
     </ion-slide>
