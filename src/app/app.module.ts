@@ -8,7 +8,6 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { NewGoalPage } from '../pages/new-goal/new-goal';
 import { GoalDetailPage } from '../pages/goal-detail/goal-detail';
-import { GoalModalPage} from '../pages/goal-modal/goal-modal';
 
 
 import {ProgressBarModule} from "angular-progress-bar";
@@ -20,7 +19,6 @@ import {ProgressBarModule} from "angular-progress-bar";
     HomePage,
     NewGoalPage,
     GoalDetailPage,
-    GoalModalPage
   ],
   imports: [
     BrowserModule,
@@ -32,9 +30,7 @@ import {ProgressBarModule} from "angular-progress-bar";
     MyApp,
     HomePage,
     NewGoalPage,
-    GoalDetailPage,
-    GoalModalPage
-  ],
+    GoalDetailPage  ],
   providers: [
     StatusBar,
     SplashScreen,
