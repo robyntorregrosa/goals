@@ -1,9 +1,9 @@
 <ion-content padding>
   <h1>Goals</h1>
-  <ion-fab id="fab" bottom right>
-    <button (click)="onNewGoal()" ion-fab>
-      <h1>+</h1></button>
+   <ion-fab id ="fab1" bottom right>
+    <button (click)="onNewGoal()" ion-fab mini><ion-icon name="add"></ion-icon></button>
   </ion-fab>
+
   <ion-list>
     <ion-row>
       <ion-card (click)="onGoalDetails()" id="card">
@@ -14,7 +14,7 @@
         <ion-item class="cardInfo">
           <span item-left>  <ion-icon name="heart"></ion-icon>
 </span>
-          <span item-left>Step 5/12</span>
+          <span item-left>Step 4/5</span>
           <progress-bar [progress]="75" [color]="secondary">
           </progress-bar>
         </ion-item>
@@ -25,7 +25,7 @@
         <div class="cardcont">
           <img src="https://425magazine.com/wp-content/uploads/2016/12/books-bookstore-book-reading-159711-1024x681.jpeg" />
         </div>
-        <div class="card-title">Read 10 books</div>
+        <div class="card-title">Read 10 Books</div>
         <ion-item class="cardInfo2"> 
         	<span item-left>  <ion-icon name="book"></ion-icon>
 </span><span item-left>Step 3/10</span>
@@ -37,9 +37,9 @@
     <ion-row>
       <ion-card id="card">
         <div class="cardcont">
-          <img src="https://i.pinimg.com/originals/3e/8f/bf/3e8fbfcf97634d690b23ef50841c3d11.jpg" />
+          <img src="https://static1.squarespace.com/static/55aeab27e4b05cdcfff06fa7/55af0b43e4b01daa35c71ee5/55af0cece4b0fab6da78814a/1437535482220/IMG_0419.JPG?format=500w" />
         </div>
-        <div class="card-title">Feeling More +</div>
+        <div class="card-title">Feel Positive</div>
         <ion-item class="cardInfo4"> <span item-left>  <ion-icon name="happy"></ion-icon>
 </span><span item-left>Step 4/7</span>
           <progress-bar [progress]="57" [color]="yellow">

@@ -5,127 +5,132 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-	<ion-title>Run a Marathon</ion-title>
+    <ion-title>Run a Marathon</ion-title>
   </ion-navbar>
-
 </ion-header>
-
-
 <ion-content padding>
-
-
-      <ion-card id="card">
-        <div class="cardcont">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRX33guRrziFAgzr0SaXYAeukJD2TCyqpBpYzVlvp2fuJ-oQ__" />
-        </div>
-        <div class="card-title">LA Marathon</div>
-        <ion-item class="cardInfo">
-          <span item-left>  <ion-icon name="heart"></ion-icon></span>
-          <span item-left>Step 5/12</span>
-          	  <button id = "supporters" ion-button item-right>
-				  <ion-icon name="contact"></ion-icon>
-				  Add supporters
-				</button>
-        <!--   <progress-bar [progress]="75" [color]="secondary">
+  <ion-card id="card">
+    <div class="cardcont">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRX33guRrziFAgzr0SaXYAeukJD2TCyqpBpYzVlvp2fuJ-oQ__" />
+    </div>
+    <div class="card-title">LA Marathon</div>
+    <ion-item class="cardInfo">
+      <span item-left>  <ion-icon name="heart"></ion-icon></span>
+      <span item-left>Step 4/5</span>
+      <button id="supporters" ion-button item-right>
+        <ion-icon name="contact"></ion-icon>
+        Add supporters
+      </button>
+      <!--   <progress-bar [progress]="75" [color]="secondary">
           </progress-bar> -->
-        </ion-item>
-      </ion-card>
-
-
-<div id="upper">
-<!-- 
+    </ion-item>
+  </ion-card>
+  <div id="upper">
+    <!-- 
 	  <button ion-button icon-right>
   <ion-icon name="contact"></ion-icon>
   Add supporters
 </button> -->
-	</div>
-<!-- 	<progress-bar [progress]="75" [color]="blue">
+  </div>
+  <!-- 	<progress-bar [progress]="75" [color]="blue">
 	</progress-bar> -->
-
-
-<!-- 
+  <!-- 
 <button ion-button icon-left>
   <ion-icon name="ios-cog"></ion-icon>
   Edit
 </button> -->
-	 <ion-fab id ="fab1" top right>
-		<button ion-fab mini><ion-icon name="add"></ion-icon></button>
-		<ion-fab-list  id="fabList" side="bottom">
-      <button ion-fab><ion-icon name="ios-image"></ion-icon></button>
-      <button ion-fab><ion-icon name="create"></ion-icon></button>
-      <button ion-fab><ion-icon name="list-box"></ion-icon></button>
+  <ion-fab id="fab1" top right>
+    <button ion-fab mini>
+      <ion-icon name="add"></ion-icon>
+    </button>
+    <ion-fab-list id="fabList" side="bottom">
+      <button ion-fab>
+        <ion-icon name="ios-image"></ion-icon>
+      </button>
+      <button ion-fab>
+        <ion-icon name="create"></ion-icon>
+      </button>
+      <button ion-fab>
+        <ion-icon name="ios-list-box"></ion-icon>
+      </button>
     </ion-fab-list>
-	</ion-fab>
+  </ion-fab>
   <div class="container">
-	<ul>
-	  <li><span></span>
+    <ul>
+      <li><span></span>
+        <div><span></span>
+          <label for="check" style="word-wrap:break-word">
+            <ion-checkbox color="dark" checked="true"></ion-checkbox>
+            <span class="title">Interval Running- 6 mi</span>
+          </label>
+          <img src="http://files.www.fleetfeetcincy.com/resources/running-routes/5MileCarp.png" />
+          <span>Griffith Park w/ Mary's playlist </span>
+          <br />
+        </div> <span class="number"><span>May 1</span> <span></span></span>
+        <button ion-button color="primary" round>Share this milestone
+          <ion-icon name="logo-facebook"></ion-icon>
+        </button>
+      </li>
+      <li>
+        <div><span></span>
+          <label for="check" style="word-wrap:break-word">
+            <ion-checkbox color="dark" checked="true"></ion-checkbox>
+            <span class="title">Buy new gear</span>
+          </label>
+          <img src="https://static.vecteezy.com/system/resources/previews/000/145/796/non_2x/running-equipment-free-vector.jpg">
+          <div class="info">To buy</div>
+          <input type="checkbox" name="vehicle" value="Bike" checked="checked"> Running shoes
+          <br>
+          <input type="checkbox" name="vehicle" value="Car" checked="checked"> Bluetooth headphones
+          <br>
+        </div> <span class="number"><span>May 15</span> <span></span></span>
+        <button ion-button color="primary" round>Share this milestone
+          <ion-icon name="logo-facebook"></ion-icon>
+        </button>
+      </li>
+      <li>
+        <div><span></span>
+          <label for="check" style="word-wrap:break-word">
+            <ion-checkbox color="dark" checked="true"></ion-checkbox>
+            <span class="title">Volunteer at children's 5k!</span>
+            <img src="http://girlsrun.org/wp-content/uploads/2013/11/slider3.jpg" />
+          </label>
+          <div class="info">Girlsrun 5k Sunday, May 21st @8am</div>
+        </div> <span class="number"><span>May 21</span> <span></span></span>
+        <button ion-button color="primary" round>Share this milestone
+          <ion-icon name="logo-facebook"></ion-icon>
+        </button>
+      </li>
 
-		<div><span></span>
-			<label for="check"  style="word-wrap:break-word">
-				<ion-checkbox color="dark" checked="true"></ion-checkbox>
-				<span class="title">Interval Running- 6 mi</span>
-			</label>
-		<img src="http://files.www.fleetfeetcincy.com/resources/running-routes/5MileCarp.png"/>
+       <li>
+        <div><span></span>
+          <label for="check" style="word-wrap:break-word">
+            <ion-checkbox color="dark" checked="true"></ion-checkbox>
+            <span class="title"><ion-icon name="ios-contact"></ion-icon> Run w/ Jen @4pm</span>
+            <img src="https://cdn-assets.alltrails.com/uploads/photo/image/11321859/extra_large_cd3db20269ceb0c5bbcceea04ce32a46.jpg" />
+          </label>
+           <div class="info">Jen and I took some beautiful photos around the lake, it makes great motivation on a 7 mile trail run! </div>
+        </div> <span class="number"><span>May 23</span> <span></span></span>
+        <button ion-button color="primary" round>Share this milestone
+          <ion-icon name="logo-facebook"></ion-icon>
+        </button>
+      </li>
 
-		<span>Griffith Park w/ Mary's playlist </span><br /> 
-		</div> <span class="number"><span>May 1</span> <span></span></span>
-			<button ion-button color="primary" round>Share this milestone 
-			<ion-icon name="logo-facebook"></ion-icon>
-			</button>
 
-	
-	  </li>
-
-	  <li>
-		<div><span></span>
-		 <label for="check"  style="word-wrap:break-word">
-			<ion-checkbox color="dark" checked="true"></ion-checkbox>
-			<span class="title">Buy new gear</span>
-				
-		 </label>
-
-		 <img src="https://static.vecteezy.com/system/resources/previews/000/145/796/non_2x/running-equipment-free-vector.jpg">
-		  <div class="info">To buy</div>
-			<input type="checkbox" name="vehicle" value="Bike" checked="checked"> Running shoes<br>
-			<input type="checkbox" name="vehicle" value="Car" checked="checked"> Bluetooth headphones<br>
-			</div> <span class="number"><span>May 15</span> <span></span></span>
-					<button ion-button color="primary" round>Share this milestone 
-					<ion-icon name="logo-facebook"></ion-icon>
-					</button>
-
-	  </li>
-	  <li>
-		<div><span></span>
-		<label for="check"  style="word-wrap:break-word">
-			<ion-checkbox color="dark" checked="true"></ion-checkbox>
-			<span class="title">Volunteer at children's 5k!</span>
-				<img src="http://girlsrun.org/wp-content/uploads/2013/11/slider3.jpg" />
-
-		 </label>	
-		  <div class="info">Girlsrun 5k Sunday, May 9th @8am</div>
-<!-- 		  <div class="type">Review</div>
- -->		</div> <span class="number"><span>May 21</span> <span></span></span>
-					<button ion-button color="primary" round>Share this milestone
-					<ion-icon name="logo-facebook"></ion-icon>
-					</button>
-
-	  </li>
-	  <li>
-		<div><span></span>
-		<label for="check"  style="word-wrap:break-word">
-			<ion-checkbox color="dark" checked="true"></ion-checkbox>
-			<span class="title">Marathon completed!</span>
-			<img src="https://www.nyrr.org/sites/default/files/DASH16_DASH_006.jpg" />
-		 </label>	
-		  <div class="info">Time: 4:02 - awesome first marathon. It was great to see all my supporters at the finish line!</div>
-		</div> <span class="number"><span>Today</span> <span></span></span>
-			<button ion-button color="primary" round>Share this milestone
-			<ion-icon name="logo-facebook"></ion-icon>
-			</button>
-
-	  </li>
-	</ul>
-  </div>
+      <li>
+        <div><span></span>
+          <label for="check" style="word-wrap:break-word">
+            <ion-checkbox color="dark" checked="false"></ion-checkbox>
+            <span class="title">Marathon completed!</span>
+            <img src="https://www.nyrr.org/sites/default/files/DASH16_DASH_006.jpg" />
+          </label>
+          <div class="info">I've worked hard to get here- hoping to finish in 4 hours. I can't wait to see all my supporters at the finish line! Thank you all for supporting me along the way!</div>
+        </div> <span class="number"><span>Today</span> <span></span></span>
+        <button ion-button color="primary" round>Share this milestone
+          <ion-icon name="logo-facebook"></ion-icon>
+        </button>
+      </li>
+    </ul>
+    </div>
 </ion-content>
