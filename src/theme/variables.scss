@@ -13,6 +13,11 @@ $app-direction: ltr;
 
 
 @import "ionic.globals";
+$font-path: "../assets/fonts";
+$app-direction: ltr;
+@import "ionic.globals";
+
+@import './gradient-mixins';
 
 
 // Shared Variables
