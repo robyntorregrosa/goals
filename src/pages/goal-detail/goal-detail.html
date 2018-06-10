@@ -10,12 +10,14 @@
 	<ion-title>Run a Marathon</ion-title>
   </ion-navbar>
 
+
 </ion-header>
 
 
 <ion-content padding>
 <div id="upper">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRX33guRrziFAgzr0SaXYAeukJD2TCyqpBpYzVlvp2fuJ-oQ__" />
+	  LA Marathon on May 28th
 	</div>
 	<progress-bar [progress]="75" [color]="blue">
 	</progress-bar>
@@ -26,7 +28,7 @@
 
 <button ion-button icon-left>
   <ion-icon name="logo-facebook"></ion-icon>
-  Share
+  Share progress
 </button>
 <!-- 
 <button ion-button icon-left>
@@ -48,45 +50,50 @@
 		<label for="check"  style="word-wrap:break-word">
 			<ion-checkbox color="dark" checked="true"></ion-checkbox>
 			<span class="title">Interval Running- 6 mi</span>
-		 </label>			
+		 </label>		
 			<img src="http://files.www.fleetfeetcincy.com/resources/running-routes/5MileCarp.png" />
 
-		  <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>
-		  <div class="type">Presentation</div>
+		  <div class="info">Griffith Park w/ Mary's playlist</div>
 		</div> <span class="number"><span>May 1</span> <span></span></span>
 	  </li>
-
-
-
 	  <li>
 		<div><span></span>
 		 <label for="check"  style="word-wrap:break-word">
 			<ion-checkbox color="dark" checked="false"></ion-checkbox>
-			<span class="title">Targui</span>
+			<span class="title">Buy new gear</span>
+				
 		 </label>
-		  <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>
-		  <div class="type">Presentation</div>
-		</div> <span class="number"><span>May 15</span> <span></span></span>
+
+		 <img src="https://static.vecteezy.com/system/resources/previews/000/145/796/non_2x/running-equipment-free-vector.jpg">
+		  <div class="info">To buy</div>
+			<input type="checkbox" name="vehicle" value="Bike"> Running shoes<br>
+			<input type="checkbox" name="vehicle" value="Car" checked="checked"> Bluetooth headphones<br>
+			</div> <span class="number"><span>May 15</span> <span></span></span>
 	  </li>
 	  <li>
 		<div><span></span>
 		<label for="check"  style="word-wrap:break-word">
 			<ion-checkbox color="dark" checked="false"></ion-checkbox>
-			<span class="title">3rd Milestone</span>
+			<span class="title">Volunteer at children's 5k!</span>
+				<img src="http://girlsrun.org/wp-content/uploads/2013/11/slider3.jpg" />
+
 		 </label>	
-		  <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>
-		  <div class="type">Review</div>
-		</div> <span class="number"><span>May 21</span> <span></span></span>
+		  <div class="info">Girlsrun 5k Sunday, May 9th @8am</div>
+<!-- 		  <div class="type">Review</div>
+ -->		</div> <span class="number"><span>May 21</span> <span></span></span>
 	  </li>
 	  <li>
 		<div><span></span>
 		<label for="check"  style="word-wrap:break-word">
 			<ion-checkbox color="dark" checked="false"></ion-checkbox>
-			<span class="title">4th Milestone</span>
+			<span class="title">Marathon completed!</span>
+			<img src="https://www.nyrr.org/sites/default/files/DASH16_DASH_006.jpg" />
 		 </label>	
-		  <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>
-		  <div class="type">Review</div>
+		  <div class="info">Time: 4:02 - awesome first marathon. It was great to see all my supporters at the finish line!</div>
+		  <!-- <div class="type">Review</div> -->
 		</div> <span class="number"><span>Today</span> <span></span></span>
+		<button ion-button color="primary" round>Share your journey</button>
+
 	  </li>
 	</ul>
   </div>
