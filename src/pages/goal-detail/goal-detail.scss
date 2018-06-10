@@ -21,16 +21,19 @@ page-goal-detail {
         list-style: none;
         position: relative;
         color: #576270;
-        font-size: 15px;
+        font-size: 14px;
     }
 
   #card {
     border-radius: 25px;
   }
+    #title {
+    font-size: 14px;
+  }
    .card-title {
     position: absolute;
     top: 50%;
-    font-size: 3.0em;
+    font-size: 12px;
     width: 100%;
     font-weight: bolder;
     color: #fff;
@@ -97,7 +100,7 @@ page-goal-detail {
     }
     .container div .title, .container div .type {
         font-weight: 600;
-        font-size: 12px;
+        font-size: 18px;
     }
     .container div .info {
         font-weight: 300;
