@@ -1,13 +1,9 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-    <button (click)="onNewGoal()" ion-button>newGoal +</button>
-  </ion-navbar>
-</ion-header>
 <ion-content padding>
   <h1>Goals</h1>
+  <ion-fab top right>
+    <button (click)="onNewGoal()" ion-fab>
+      <h1>+</h1></button>
+  </ion-fab>
   <ion-list>
     <ion-row>
       <ion-card (click)="onGoalDetails()" id="card">
@@ -15,8 +11,8 @@
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRX33guRrziFAgzr0SaXYAeukJD2TCyqpBpYzVlvp2fuJ-oQ__" />
         </div>
         <div class="card-title">Run a Marathon</div>
-        <ion-item> <span item-left>Step 5/12</span>
-          <progress-bar [progress]="75" [color]="blue">
+        <ion-item class="cardInfo"> <span item-left>Step 5/12</span>
+          <progress-bar [progress]="75" [color]="secondary">
           </progress-bar>
         </ion-item>
       </ion-card>
@@ -24,23 +20,37 @@
     <ion-row>
       <ion-card id="card">
         <div class="cardcont">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRX33guRrziFAgzr0SaXYAeukJD2TCyqpBpYzVlvp2fuJ-oQ__" />
+          <img src="https://425magazine.com/wp-content/uploads/2016/12/books-bookstore-book-reading-159711-1024x681.jpeg" />
         </div>
-        <div class="card-title">Run a Marathon</div>
-        <ion-item> <span item-left>Step 5/12</span>
-          <progress-bar [progress]="75" [color]="blue">
+        <div class="card-title">Read 10 books</div>
+        <ion-item class="cardInfo2"> <span item-left>Step 3/10</span>
+          <progress-bar [progress]="30" [color]="red">
           </progress-bar>
         </ion-item>
       </ion-card>
     </ion-row>
+    
+    <ion-row>
+      <ion-card id="card">
+        <div class="cardcont">
+          <img src="https://i.pinimg.com/originals/3e/8f/bf/3e8fbfcf97634d690b23ef50841c3d11.jpg" />
+        </div>
+        <div class="card-title">Feeling More +</div>
+        <ion-item class="cardInfo4"> <span item-left>Step 4/7</span>
+          <progress-bar [progress]="57" [color]="yellow">
+          </progress-bar>
+        </ion-item>
+      </ion-card>
+    </ion-row>
+
     <ion-row>
       <ion-card id="card">
         <div class="cardcont">
           <img src="https://i.pinimg.com/originals/3e/8f/bf/3e8fbfcf97634d690b23ef50841c3d11.jpg" />
         </div>
         <div class="card-title">Get Organized</div>
-        <ion-item> <span item-left>Step 7/7</span>
-          <progress-bar [progress]="100" [color]="danger">
+        <ion-item class="cardInfo4"> <span item-left>Step 7/7</span>
+          <progress-bar [progress]="100" [color]="yellow">
           </progress-bar>
         </ion-item>
       </ion-card>
