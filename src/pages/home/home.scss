@@ -16,6 +16,11 @@ page-home {
     padding-right: 0px!important;
   }
 
+  #fab {
+  	flex: 1;
+  	justify-content: center;
+  	align-content: center;
+  }
   #title {
     color: #fff;
     display: inline;
