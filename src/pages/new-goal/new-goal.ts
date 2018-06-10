@@ -16,12 +16,44 @@ export class NewGoalPage {
 
 
 	public myItemsList = [1,2,3];
+	public myOtherList = [];
+	public displayOther = false;
+	public other = " ";
+	public displayImage = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   addMilestone() {
-  	this.myItemsList.push(this.myItemsList[this.myItemsList.length - 1] + 1);
+  	this.myItemsList.push(this.myItemsList[this.myItemsList.length -1] + 1);
+  }
+  doNothing() {
+
+
+  }
+
+
+  addImage() {
+  	console.log("che");
+  	this.displayImage = true;
+  }
+  onSelect() {
+  	console.log('sdf');
+  	  	if(this.other == "other")
+  	{
+  		console.log("df");
+  		  	this.displayOther = true;
+
+  	}
+  }
+
+  addOther() {
+  	console.log("sdf");
+  	if(this.myOtherList.length == 0)
+  	{
+  		this.myOtherList.push(" ");
+
+  	}
   }
 
   

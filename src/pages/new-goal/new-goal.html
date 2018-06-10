@@ -5,67 +5,99 @@
 </ion-header>
 <ion-content>
   <ion-slides pager>
-
-     <ion-slide>
-
-          <h2>I'm working on...</h2>
-
-          <ion-list radio-group [(ngModel)]="newGoalTheme">
-
-                <ion-list-header>
-                        Select goal attribute:
-                </ion-list-header>
-
-                <ion-item>
-                        <ion-label>Productivity</ion-label>
-                        <ion-radio value="productivity"></ion-radio>
-                </ion-item>
-                 <ion-item>
-                        <ion-label>Health</ion-label>
-                        <ion-radio value="health"></ion-radio>
-                </ion-item>
-                 <ion-item>
-                        <ion-label>Relationships</ion-label>
-                        <ion-radio value="relationships"></ion-radio>
-                </ion-item>
-                 <ion-item>
-                        <ion-label>Finance</ion-label>
-                        <ion-radio value="finance"></ion-radio>
-                </ion-item>
-                 <ion-item>
-                        <ion-label>Personal Development</ion-label>
-                        <ion-radio value="personal development"></ion-radio>
-                </ion-item>
-                 <ion-item>
-                        <ion-label>Career</ion-label>
-                        <ion-radio value="finance"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                        <ion-label floating>Other</ion-label>
-                        <ion-radio value="other"></ion-radio>
-                        <ion-input type="text"></ion-input>
-                </ion-item>
-        </ion-list>
-    </ion-slide>
-
-
-    <ion-slide style="background-color: light">
-      <div class="upper">
-        <h4>what is your goal?</h4>
-        <ion-input id="goalInput" placeholder="type here" type="input"></ion-input>
-        <a href=" "><h4>or do you not have one?</h4> </a>
-      </div>
-      <div class="middle">
-        <h4>break your goal into at least 3 smaller milestones</h4>
-        <ion-item *ngFor="let myItem of myItemsList; let i = index">
-          <ion-input [(ngModel)]="myItemsList[i]" type="text"></ion-input>
+    <ion-slide>
+      <h2>I'm working on...</h2>
+      <ion-list radio-group [(ngModel)]="newGoalTheme">
+        <ion-item>
+          <ion-label>Goal Title</ion-label>
+          <ion-input placeholder="..." type="text"></ion-input>
         </ion-item>
-        <button (click)="addMilestone()" ion-button>Add</button>
-      </div>
+        <ion-item>
+          <ion-label>Select Goal Attribute</ion-label>
+          <ion-select (ionChange)="onSelect()" [(ngModel)]="other">
+            <ion-option value="nes">Productivity</ion-option>
+            <ion-option value="n64">Health</ion-option>
+            <ion-option value="ps">Relationships</ion-option>
+            <ion-option value="genesis"> Personal Development</ion-option>
+            <ion-option value="saturn">Career</ion-option>
+            <ion-option value="other">Other</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item *ngIf="displayOther">
+          <ion-input placeholder="other..." type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>add image</ion-label>
+          <span item-right> <button ion-button (click)="addImage()">+</button></span>
+        </ion-item>
+        <ion-item *ngIf="displayImage">
+          <img *ngIf="displayImage" src="https://life-cdn.global.ssl.fastly.net/life/wp-content/uploads/2014/08/Women-Run-Marathons-Better-2.jpg" />
+        </ion-item>
+        <ion-item>
+          <ion-textarea placeholder="Enter a description"></ion-textarea>
+        </ion-item>
+      </ion-list>
     </ion-slide>
+
+
+
+
     <ion-slide style="background-color: light">
-      <h2>Slide 3</h2>
+      <h2>Add your milestones</h2>
+      <ion-list>
+        <ion-card *ngFor="let item of myItemsList; let i = index">
+          <ion-card-content>
+            <ion-item>
+              <ion-label id="label" >milestone title: </ion-label>
+              <ion-label>date: </ion-label>
+                <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+      </ion-list>
+      <button (click)="addMilestone()">add</button>
+    </ion-slide>
+
+
+
+
+
+
+
+
+
+
+
+
+    <ion-slide style="background-color: light">
+      <!--slide 3 -->
+      <h2>Add your supporters</h2>
+      <ion-list>
+        <ion-item>
+          <ion-label>Mark Zuck</ion-label>
+          <ion-avatar item-start>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Mark_Zuckerberg_em_setembro_de_2014_%28cropped%29.jpg/220px-Mark_Zuckerberg_em_setembro_de_2014_%28cropped%29.jpg">
+          </ion-avatar>
+          <ion-checkbox color="dark" checked="true"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Spiderman</ion-label>
+          <ion-avatar item-start>
+            <img src="https://i.pinimg.com/originals/7f/f7/d9/7ff7d93eaa14a904e3e35013fb7550fd.png">
+          </ion-avatar>
+          <ion-checkbox color="blue" checked="true"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Third Person</ion-label>
+          <ion-avatar item-start>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Mark_Zuckerberg_em_setembro_de_2014_%28cropped%29.jpg/220px-Mark_Zuckerberg_em_setembro_de_2014_%28cropped%29.jpg">
+          </ion-avatar>
+          <ion-checkbox color="secondary" checked="true"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <button ion-button>More Friends</button>
+        </ion-item>
+      </ion-list>
     </ion-slide>
   </ion-slides>
 </ion-content>
