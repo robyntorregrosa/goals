@@ -1,4 +1,28 @@
 page-new-goal {
+    @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,600,700");
+    .content {
+        height: 100vh;
+        font-family: "Ubuntu", sans-serif;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#F5F4F2+0,FFCC33+100 */
+        background: #F5F4F2;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #F5F4F2 0%, #FFCC33 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #F5F4F2 0%, #FFCC33 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #F5F4F2 0%, #FFCC33 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F5F4F2', endColorstr='#FFCC33',GradientType=0 );
+        /* IE6-9 */
+        }
+        .container ul {
+        margin: 0;
+        margin-top: 30px;
+        list-style: none;
+        position: relative;
+        color: #576270;
+        font-size: 14px;
+    }
 
 #goalInput {
 border-color: blue;
